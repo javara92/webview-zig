@@ -16,7 +16,7 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
     const webview = b.dependency("webview", .{});
-    
+
     const exe = b.addExecutable(.{
         .name = "bind",
         // In this case the main source file is merely a path, however, in more
@@ -29,8 +29,8 @@ pub fn build(b: *std.Build) void {
     exe.root_module.addImport("webview", webview.module("webview"));
 
     exe.linkLibC();
-
-    exe.linkSystemLibrary("webview");
+    exe.linkLibrary(webview.artifact("webviewStatic"));
+    // exe.linkSystemLibrary("webview");
 
     // This declares intent for the executable to be installed into the
     // standard location when the user invokes the "install" step (the default

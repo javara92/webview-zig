@@ -1,5 +1,5 @@
 .{
-    .name = "basic",
+    .name = .basic,
     .version = "0.1.0",
     .paths = .{""},
     .dependencies = .{
@@ -7,4 +7,5 @@
             .path = "../../",
         },
     },
+    .fingerprint = 0x9079755382f6a369,
 }

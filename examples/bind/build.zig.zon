@@ -1,5 +1,5 @@
 .{
-    .name = "bind",
+    .name = .bind,
     .version = "0.1.0",
     .paths = .{""},
     .dependencies = .{
@@ -7,4 +7,5 @@
             .path = "../../",
         },
     },
+    .fingerprint = 0x46ccf35313d66c79,
 }

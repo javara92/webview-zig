@@ -1,5 +1,5 @@
 .{
-    .name = "eval",
+    .name = .eval,
     .version = "0.1.0",
     .paths = .{""},
     .dependencies = .{
@@ -7,4 +7,5 @@
             .path = "../../",
         },
     },
+    .fingerprint = 0x4522bb5ad4c70155,
 }
